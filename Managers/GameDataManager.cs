@@ -13,6 +13,7 @@ namespace Chuozt.Template
     public static class GameDataManager
     {
         private const string KEY_SFX = "SFX";
+        private const string KEY_MUSIC = "MUSIC";
 
         public static event Action onNotEnoughCoin;
         public static event Action onCoinChanged;
@@ -20,6 +21,10 @@ namespace Chuozt.Template
         public static void ToggleSFX() => PlayerPrefs.SetInt(KEY_SFX, GetSFXValue() ? 0 : 1);
 
         public static bool GetSFXValue() => PlayerPrefs.GetInt(KEY_SFX, 1) == 1;
+
+        public static void ToggleMusic() => PlayerPrefs.SetInt(KEY_MUSIC, GetMusicValue() ? 0 : 1);
+
+        public static bool GetMusicValue() => PlayerPrefs.GetInt(KEY_MUSIC, 1) == 1;
     }
 
     public static class ScenesName
