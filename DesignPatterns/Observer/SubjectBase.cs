@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace GameCore.Observers
+namespace GameCore.DesignPatterns
 {
     public abstract class SubjectBase<T> : ISubject<T>
     {

@@ -7,7 +7,7 @@
 
 using UnityEngine;
 
-namespace Chuozt.Template
+namespace GameCore.DesignPatterns
 {
     public class Singleton<T> : MonoBehaviour where T : Component
     {

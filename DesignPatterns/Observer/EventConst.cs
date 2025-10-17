@@ -1,4 +1,4 @@
-namespace GameCore.Observers
+namespace GameCore.DesignPatterns
 {
     public static class EventConst
     {

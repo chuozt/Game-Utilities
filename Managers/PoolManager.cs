@@ -8,6 +8,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using GameCore.DesignPatterns;
 
 #if ODIN_INSPECTOR
 using Sirenix.OdinInspector;
