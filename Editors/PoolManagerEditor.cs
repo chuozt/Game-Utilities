@@ -10,7 +10,7 @@ using UnityEditor;
 
 namespace Chuozt.Template
 {
-#if !ODIN_INSPECTOR
+#if !ODIN_INSPECTOR && UNITY_EDITOR
     [CustomEditor(typeof(PoolManager))]
     public class PoolManagerEditor : UnityEditor.Editor
     {

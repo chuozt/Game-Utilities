@@ -13,6 +13,7 @@ using Chuozt.Template.ProUtils;
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 public static class PoolKeyGenerator
 {
     private const string PrefKey = "Chuozt_PoolKey_Folder";
@@ -51,7 +52,7 @@ public static class PoolKeyGenerator
             {
                 Debug.LogWarning($"⚠️ Saved folder {folderPath} is missing. Falling back to Assets/Scripts");
                 folderPath = "Assets/Scripts";
-                
+
                 if (!AssetDatabase.IsValidFolder(folderPath))
                 {
                     AssetDatabase.CreateFolder("Assets", "Scripts");
@@ -96,3 +97,4 @@ public static class PoolKeyGenerator
         Debug.Log($"✅ PoolKey.cs regenerated at: {filePath}");
     }
 }
+#endif

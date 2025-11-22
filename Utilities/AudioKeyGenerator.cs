@@ -12,6 +12,7 @@ using Chuozt.Template.ProUtils;
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 public static class AudioKeyGenerator
 {
     private const string PrefKey = "Chuozt_AudioKey_Folder";
@@ -70,3 +71,4 @@ public static class AudioKeyGenerator
         Debug.Log($"✅ AudioKey.cs regenerated at: {filePath}");
     }
 }
+#endif

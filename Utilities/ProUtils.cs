@@ -15,9 +15,9 @@ using System.Text;
 
 namespace Chuozt.Template.ProUtils
 {
-    //REQUIRES DOTWEEN
+    // REQUIRES DOTWEEN
 
-    //REQUIRES UNITY's SPLINE
+    // REQUIRES UNITY's SPLINE
     // public static class SplineMovementUtils
     // {
     //     public static Tween MoveAlongSpline(Transform transform, SplineContainer spline, float duration, Ease ease = Ease.InQuint, bool lookForward = true)
@@ -39,7 +39,7 @@ namespace Chuozt.Template.ProUtils
     //     }
     // }
 
-    //REQUIRES TMPro
+    // REQUIRES TMPro
     // public static class NumberTransitor
     // {
     //     public static Tweener TweenTextValue(TMP_Text text, int from, int to, float duration, RectTransform parentRectTransform = null, bool isConvertFormat = false)
